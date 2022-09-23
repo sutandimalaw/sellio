@@ -12,3 +12,38 @@ body {
     background-position: 10px;
     background-color: white;
 }
+
+//category filter
+.search-filter {
+  border-radius : 5px;
+  box-shadow:  0 0 0 1px #dddddd, 0 2px 4px 0 #00000012, 0 1px 1.5px 0 #0000000d;
+  outline: none;
+  border: none;
+  padding: 12px;
+  padding-left:14px;
+  font-weight: 600;
+  font-family: nunito,helvetica,Arial,sans-serif;
+  cursor: cell;
+}
+
+.search-filter-icon-circle {
+  background: #ff4742;
+  position: absolute;
+  top: 5px;
+  pointer-events: none!important;
+  right: 8px;
+  padding: 7px;
+  border-radius: 100%;
+}
+
+.search-filter-icon {
+  position: relative;
+  pointer-events: none!important;
+  width: 14px;
+  height: 14px;
+  background-image: url('../public/images/chevron-down.svg');
+  background-size : cover;
+  filter: invert(100%);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}

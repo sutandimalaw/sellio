@@ -5,7 +5,7 @@ import Search from './Search';
 const Container = styled.div`
   padding: 20px;
   background-color: #0b968f4d;
-  height: 21vh;
+  height: 30vh;
 `;
 const RowEnd = styled.div`
   display: flex;
