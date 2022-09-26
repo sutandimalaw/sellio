@@ -1,3 +1,5 @@
+import { InputGroup, InputLeftElement, Input  } from '@chakra-ui/react';
+import { Search2Icon } from '@chakra-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -5,23 +7,17 @@ const Container = styled.div`
     display:flex;
     justify-content: center;
 `;
-const Input = styled.input`
-    padding: 10px;
-    font-size: 20px;
-    width: 35vh;
-    height: 3vh;
-    border-radius: 15px;
-    border: 1px solid gainsboro;
-`;
-
 
 const Search = () => {
   return (
     <Container>
-        <Input 
-            placeholder="Search"
-            className="search-icon"
-        />
+        <InputGroup w='300px' bg="white" borderRadius='25' >
+          <InputLeftElement pointerEvents='none' h="100%" >
+            <Search2Icon color='gray.300'/>
+          </InputLeftElement>
+          <Input type='tel' placeholder='Search' h='50' borderRadius='25'/>
+        </InputGroup>
+          
     </Container>
   )
 }
